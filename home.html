@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Training Admission | Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    h2 { color: #2c3e50; }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    input, select {
+      padding: 8px;
+      width: 100%;
+      margin-top: 5px;
+    }
+    .box {
+      background: #f5f5f5;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .notice-board ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>🏠 Home</h2>
+
+    <!-- Admission Form -->
+    <div class="box">
+      <h3>🎓 Admission Form</h3>
+      <form>
+        <div class="form-group">
+          <label>Student Name:</label>
+          <input type="text" name="name" placeholder="Enter full name">
+        </div>
+        <div class="form-group">
+          <label>Select Course:</label>
+          <select name="course">
+            <option value="">-- Select Course --</option>
+            <option>Computer Operation (Level-3)</option>
+            <option>Graphic Design (Level-3)</option>
+            <option>Graphic Design for Freelancing (Level-3)</option>
+            <option>Woven Sewing Machine Operation (Level-2)</option>
+            <option>Tailoring & Dress Making (Level-2)</option>
+            <option>Solar Electrical System Installation (Level-1)</option>
+            <option>Mobile Phone Servicing (Level-2)</option>
+            <option>Construction Site Supervision (Level-4)</option>
+            <option>Electrical Installation & Maintenance for Construction (Level-2)</option>
+            <option>Knit Sewing Machine Operation (Level-2)</option>
+            <option>Project Proposal for Construction (Level-6)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Phone Number:</label>
+          <input type="tel" name="phone" placeholder="e.g. 017xxxxxxxx">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Admission Deadline -->
+    <div class="box">
+      <h3>📅 Admission Deadline</h3>
+      <p>Last date for admission: <strong>August 15, 2025</strong></p>
+    </div>
+
+    <!-- Latest Notice -->
+    <div class="box">
+      <h3>📢 Latest Notice</h3>
+      <p>📌 Orientation class for Graphic Design (Level-3) starts on August 5, 2025 at 10:00 AM.</p>
+    </div>
+
+    <!-- Notice Board -->
+    <div class="box notice-board">
+      <h3>📋 Notice Board</h3>
+      <ul>
+        <li>🛠️ Electrical Installation Batch-2 routine published</li>
+        <li>🧵 Tailoring Final Exam Date Announced</li>
+        <li>📷 Graphic Design Final Project Submission: Aug 25</li>
+        <li>📝 New batch registration open now!</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>📖 About Us</h2>
+    <p>We provide government-approved skill training programs (Level 1 to 6) to empower youth for local and global job markets.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>☎️ Contact</h2>
+    <p>Phone: 01727915211 (WhatsApp)</p>
+    <p>Address: Kamrangirchar, Dhaka</p>
+  </section>
+
+</body>
+</html>

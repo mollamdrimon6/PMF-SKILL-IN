@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMF Skill Institute</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%);
+            color: #222;
+            min-height: 100vh;
+        }
+        header {
+            background: #1a237e;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        header img {
+            height: 60px;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        nav {
+            background: #283593;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0.7rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffb300;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 2rem;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .course {
+            background: #e3eafc;
+            border-radius: 8px;
+            padding: 1.2rem;
+            box-shadow: 0 1px 4px rgba(40,53,147,0.08);
+            text-align: left;
+        }
+        .course h3 {
+            margin-top: 0;
+            color: #1a237e;
+        }
+        .badge {
+            display: inline-block;
+            background: #43a047;
+            color: #fff;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.7rem;
+            border-radius: 12px;
+            margin-left: 8px;
+        }
+        .badge.paid {
+            background: #e65100;
+        }
+        footer {
+            background: #1a237e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./Photo/pmf logo.png" alt="PMF Skill Institute Logo">
+        <span style="font-size:2rem;font-weight:bold;">PMF Skill Institute</span>
+        <div style="font-size:1rem;margin-top:0.3rem;">NSDA (National Skill Development Authority) Affiliated</div>
+        <div style="font-size:1rem;margin-top:0.3rem;">Sharif Villa (2nd & 3rd Floor), Khalifaghat, Kamrangirchar, Dhaka-1211</div>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="home.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="intro" id="home">
+            <h1>Welcome to PMF Skill Institute</h1>
+            <img src="./Photo/IMG_20250226_122817.jpg" alt="Lab Photo 6" style="width:60%;border-radius:8px;">
+            <p>Empowering your future with practical skills. We offer a wide range of <b>free</b> and <b>paid</b> courses, both online and offline, to help you build your career. Join us and learn from industry experts!</p>
+        </section>
+        <section id="introduction" style="margin-bottom:2.5rem;">
+            <h2 style="text-align:center;">Introduction</h2>
+            <p style="max-width:800px;margin:0 auto;text-align:center;">PMF Skill Institute is dedicated to providing high-quality, industry-relevant training to empower individuals for the modern workforce. Our NSDA-affiliated institute offers a blend of technical, creative, and vocational courses, ensuring every learner can find a path to success. With a focus on hands-on learning, research, and community development, we strive to build a skilled, confident, and future-ready generation.</p>
+        </section>
+        </section>
+        <section id="principal-message" style="margin-bottom:2.5rem;">
+            <h2 style="text-align:center;">Principal's Message</h2>
+            <div style="max-width:700px;margin:0 auto;text-align:center;">
+                <img src="./Photo/pmf logo.png" alt="Principal" style="width:90px;height:90px;border-radius:50%;margin-bottom:1rem;box-shadow:0 2px 8px #ccc;">
+               
+                <p style="font-size:1.1rem;">Welcome to PMF Skill Institute! Our mission is to empower students with practical skills and knowledge for a brighter future. We are committed to providing quality education, modern facilities, and a supportive environment for all learners. Join us and take the next step towards your success.<br><b>- Principal, PMF Skill Institute</b></p>
+                  <img src="./Photo/WhatsApp Image 2025-07-26 at 12.21.05_8d186cec.jpg" alt="Principal" style="width:390px;height:390px;border-radius:none;margin-bottom:1rem;box-shadow:0 2px 8px #ccc;">
+            </div>
+        </section>
+        <section id="courses">
+            <div style="text-align:center;margin-bottom:1.5rem;">
+                <button id="show-course-btn-main" style="background:linear-gradient(90deg,#43a047,#1a237e);color:#fff;padding:1rem 2.2rem;border-radius:30px;font-size:1.2rem;font-weight:700;box-shadow:0 2px 8px #283593;border:none;cursor:pointer;letter-spacing:1px;transition:background 0.3s;">Course</button>
+            </div>
+            <h2 style="text-align:center;">Our Popular Courses</h2>
+            <div class="courses">
+                <div class="course" onclick="showCourseDetails(0)">
+                    <h3>Computer Operation (Level-3) <span class="badge">Free</span></h3>
+                    <p>Basic computer operation, MS Office, and digital literacy for all.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(1)">
+                    <h3>Graphic Design (Level-3) <span class="badge">Free</span></h3>
+                    <p>Photoshop, Illustrator, and design principles for creative careers.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(2)">
+                    <h3>Graphic Design for Freelancing (Level-3) <span class="badge">Free</span></h3>
+                    <p>Freelance-focused design skills, portfolio building, and online earning.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(3)">
+                    <h3>Woven Sewing Machine Operation (Level-2) <span class="badge">Free</span></h3>
+                    <p>Industrial sewing machine operation and garment production basics.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(4)">
+                    <h3>Tailoring & Dress Making (Level-2) <span class="badge">Free</span></h3>
+                    <p>Dress making, tailoring, and fashion design fundamentals.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(5)">
+                    <h3>Solar Electrical System Installation (Level-1) <span class="badge">Free</span></h3>
+                    <p>Solar panel installation, maintenance, and green energy basics.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(6)">
+                    <h3>Mobile Phone Servicing (Level-2) <span class="badge">Free</span></h3>
+                    <p>Mobile phone repair, troubleshooting, and servicing skills.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(7)">
+                    <h3>Construction Site Supervision (Level-4) <span class="badge">Free</span></h3>
+                    <p>Site management, safety, and supervision for construction projects.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(8)">
+                    <h3>Electrical Installation & Maintenance for Construction (Level-2) <span class="badge">Free</span></h3>
+                    <p>Electrical wiring, installation, and maintenance for construction sites.</p>
+                </div>
+                <div class="course" onclick="showCourseDetails(9)">
+                    <h3>Knit Sewing Machine Operation (Level-2) <span class="badge">Free</span></h3>
+                    <p>Knitwear sewing machine operation and production skills.</p>
+                </div>
+            </div>
+            <div id="course-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(30,40,80,0.7);z-index:1000;align-items:center;justify-content:center;">
+                <div style="background:#fff;padding:2rem;max-width:400px;border-radius:10px;box-shadow:0 2px 12px #222;position:relative;">
+                    <span onclick="closeCourseDetails()" style="position:absolute;top:10px;right:18px;font-size:1.5rem;cursor:pointer;">&times;</span>
+                    <div id="course-details"></div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:1.5rem;">
+                <a href="#research" style="background:#283593;color:#fff;padding:0.7rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:500;">Research & Project Option</a>
+            </div>
+        </section>
+        <section id="gallery" style="margin-top:2.5rem;">
+            <h2>Gallery: Photos, Videos & Lab</h2>
+            <div style="text-align:center;margin-bottom:1rem;">
+                <button id="show-image-btn" style="background:linear-gradient(90deg,#3a1c71,#ffaf7b);color:#fff;padding:1rem 2.2rem;border-radius:30px;font-size:1.2rem;font-weight:700;box-shadow:0 2px 8px #d76d77;border:none;cursor:pointer;letter-spacing:1px;transition:background 0.3s;">Image</button>
+            </div>
+            <div id="gallery-grid" style="display:none;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;"></div>
+            <div id="show-more-container" style="text-align:center;margin-top:1rem;display:none;">
+                <button id="show-more-gallery" style="background:#283593;color:#fff;padding:0.5rem 1.2rem;border-radius:6px;font-weight:500;border:none;cursor:pointer;">Show More</button>
+            </div>
+        </section>
+        <section id="about" style="margin-top:2.5rem;">
+        <section id="research" style="margin-top:2.5rem;">
+            <h2>PMF Skills Institute - Research Sectors</h2>
+            <ul style="max-width:800px;margin:0 auto 1.5rem auto;line-height:1.7;">
+                <li><b>Public Health and Epidemiology</b><br>Research on disease patterns, healthcare systems, and community health improvement strategies.</li>
+                <li><b>Environmental Sustainability & Climate Change</b><br>Focused on environmental protection, sustainable practices, and climate resilience in vulnerable communities.</li>
+                <li><b>TVET and Skills Development</b><br>Studies on technical and vocational education, labor market needs, and youth employability.</li>
+                <li><b>Women's Empowerment and Gender Studies</b><br>Research on gender equality, women's rights, and inclusive development policies.</li>
+                <li><b>Child Rights and Protection</b><br>Investigations into child welfare, education access, protection policies, and institutional support systems.</li>
+                <li><b>Migration and Labor Market</b><br>Analysis of internal and external migration, labor dynamics, and socioeconomic impacts.</li>
+                <li><b>Agriculture and Food Security</b><br>Research on sustainable agriculture, rural livelihoods, and resilience in food systems.</li>
+                <li><b>Digital Inclusion and ICT</b><br>Studies on access to digital tools, ICT training, and reducing the digital divide.</li>
+                <li><b>Urban Development and WASH</b><br>Research on urban planning, informal settlements, and access to safe water, sanitation, and hygiene.</li>
+                <li><b>Project Proposal for Construction (Level-6)</b><br>Advanced research and proposal writing for construction projects and infrastructure development.</li>
+            </ul>
+            <p style="text-align:center;">We encourage students to participate in research and project-based learning. Our institute provides resources and guidance for academic and practical research, innovation, and skill-based projects. Contact us to know more about ongoing research opportunities and how you can get involved!</p>
+        </section>
+            <h2>About Us</h2>
+            <p>PMF Skill Institute is a proud NSDA-affiliated training center dedicated to providing quality skill development for all. Our mission is to make skill-based education accessible and affordable, helping you achieve your career goals.</p>
+        </section>
+        <section id="contact" style="margin-top:2.5rem;">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:info@pmfskill.com">info@pmfskill.com</a></p>
+            <p>Phone: 017xx-xxxxxx</p>
+            <p>Address: PMF Skill Institute, Dhaka, Bangladesh</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 PMF Skill Institute. All rights reserved. Powered by Shikhbo Next MD RIMON MOLLA.
+    </footer>
+</body>
+<script>
+// Main Course button functionality (above popular courses)
+document.getElementById('show-course-btn-main').onclick = function() {
+    const courseGrid = document.createElement('div');
+    courseGrid.style.display = 'grid';
+    courseGrid.style.gridTemplateColumns = 'repeat(auto-fit,minmax(250px,1fr))';
+    courseGrid.style.gap = '1.5rem';
+    courseGrid.style.margin = '2rem 0';
+    courseGrid.innerHTML = courseData.map((c, i) => `
+        <div class='course' style='background:linear-gradient(135deg,#e3eafc,#fffbe7);border-radius:16px;padding:1.5rem;box-shadow:0 2px 12px rgba(40,53,147,0.12);margin-bottom:1rem;transition:transform 0.2s;cursor:pointer;' onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" onclick="showCourseDetails(${i})">
+            <h3 style='color:#1a237e;font-size:1.15rem;margin-bottom:0.7rem;'>${c.title} <span class='badge${c.type==='Paid'?' paid':''}' style='background:${c.type==='Paid'?'#e65100':'#43a047'};color:#fff;font-size:0.85rem;padding:0.25rem 0.8rem;border-radius:12px;margin-left:8px;'>${c.type}</span></h3>
+            <p style='font-size:1rem;color:#333;margin-bottom:0.5rem;'>${c.details}</p>
+        </div>
+    `).join('');
+    // Insert after the button
+    this.parentNode.insertAdjacentElement('afterend', courseGrid);
+    this.style.display = 'none';
+};
+// Gallery button and show more functionality
+const galleryImages = [
+    '<img src="./Photo/pmf logo.png" alt="Institute Logo" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/WhatsApp Image 2025-07-26 at 12.21.15_9b830d93.jpg" alt="Lab Photo 1" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/WhatsApp Image 2025-07-26 at 12.21.55_9b1dc40b.jpg" alt="Lab Photo 2" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/WhatsApp Image 2025-07-26 at 12.21.54_f5309f18.jpg" alt="Classroom Photo" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/WhatsApp Image 2025-07-26 at 12.21.54_5414e458.jpg" alt="Student Activity" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/WhatsApp Image 2025-07-26 at 12.21.54_2c161411.jpg" alt="Workshop" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/IMG_20250226_114754.jpg" alt="Lab Photo 3" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/IMG_20250226_115827.jpg" alt="Lab Photo 4" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/IMG_20250226_120035.jpg" alt="Lab Photo 5" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/IMG_20250226_122723.jpg" alt="Lab Photo 6" style="width:100%;border-radius:8px;">',
+    '<img src="./Photo/IMG_20250226_122802.jpg" alt="Lab Photo 7" style="width:100%;border-radius:8px;">',
+    '<video controls style="width:100%;border-radius:8px;"><source src="./Photo/WhatsApp Video 2025-07-26 at 12.21.46_539f8c36.mp4" type="video/mp4"><source src="./Photo/ব্যাগ বিতরণ, ট্রেনিং .mp4" type="video/mp4"></video>'
+];
+document.getElementById('show-image-btn').onclick = function() {
+    document.getElementById('gallery-grid').style.display = 'grid';
+    document.getElementById('gallery-grid').innerHTML = galleryImages.slice(0,3).join('');
+    document.getElementById('show-more-container').style.display = 'block';
+    this.style.display = 'none';
+};
+document.getElementById('show-more-gallery').onclick = function() {
+    document.getElementById('gallery-grid').innerHTML = galleryImages.join('');
+    this.style.display = 'none';
+};
+
+// Course button functionality
+document.getElementById('show-course-btn').onclick = function() {
+    document.getElementById('gallery-grid').style.display = 'grid';
+    document.getElementById('gallery-grid').innerHTML = courseData.map((c, i) => `
+        <div class='course' style='background:#e3eafc;border-radius:8px;padding:1.2rem;box-shadow:0 1px 4px rgba(40,53,147,0.08);margin-bottom:1rem;'>
+            <h3 style='color:#1a237e;'>${c.title} <span class='badge${c.type==='Paid'?' paid':''}' style='background:${c.type==='Paid'?'#e65100':'#43a047'};color:#fff;font-size:0.8rem;padding:0.2rem 0.7rem;border-radius:12px;margin-left:8px;'>${c.type}</span></h3>
+            <p>${c.details}</p>
+        </div>
+    `).join('');
+    document.getElementById('show-more-container').style.display = 'none';
+    document.getElementById('show-image-btn').style.display = 'inline-block';
+    this.style.display = 'none';
+};
+const courseData = [
+    {
+        title: 'Computer Operation (Level-3)',
+        type: 'Free',
+        details: 'Basic computer operation, MS Office, and digital literacy for all. Duration: 3 months. Certificate available.'
+    },
+    {
+        title: 'Graphic Design (Level-3)',
+        type: 'Free',
+        details: 'Photoshop, Illustrator, and design principles for creative careers. Duration: 4 months.'
+    },
+    {
+        title: 'Graphic Design for Freelancing (Level-3)',
+        type: 'Free',
+        details: 'Freelance-focused design skills, portfolio building, and online earning. Duration: 4 months.'
+    },
+    {
+        title: 'Woven Sewing Machine Operation (Level-2)',
+        type: 'Free',
+        details: 'Industrial sewing machine operation and garment production basics. Duration: 3 months.'
+    },
+    {
+        title: 'Tailoring & Dress Making (Level-2)',
+        type: 'Free',
+        details: 'Dress making, tailoring, and fashion design fundamentals. Duration: 3 months.'
+    },
+    {
+        title: 'Solar Electrical System Installation (Level-1)',
+        type: 'Free',
+        details: 'Solar panel installation, maintenance, and green energy basics. Duration: 2 months.'
+    },
+    {
+        title: 'Mobile Phone Servicing (Level-2)',
+        type: 'Free',
+        details: 'Mobile phone repair, troubleshooting, and servicing skills. Duration: 2 months.'
+    },
+    {
+        title: 'Construction Site Supervision (Level-4)',
+        type: 'Free',
+        details: 'Site management, safety, and supervision for construction projects. Duration: 4 months.'
+    },
+    {
+        title: 'Electrical Installation & Maintenance for Construction (Level-2)',
+        type: 'Free',
+        details: 'Electrical wiring, installation, and maintenance for construction sites. Duration: 3 months.'
+    },
+    {
+        title: 'Knit Sewing Machine Operation (Level-2)',
+        type: 'Free',
+        details: 'Knitwear sewing machine operation and production skills. Duration: 3 months.'
+    }
+];
+function showCourseDetails(idx) {
+    const c = courseData[idx];
+    document.getElementById('course-details').innerHTML = `<h3>${c.title} <span class="badge${c.type==='Paid'?' paid':''}">${c.type}</span></h3><p>${c.details}</p>`;
+    document.getElementById('course-modal').style.display = 'flex';
+}
+function closeCourseDetails() {
+    document.getElementById('course-modal').style.display = 'none';
+}
+</script>
+</html>
