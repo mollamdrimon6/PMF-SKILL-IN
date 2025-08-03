@@ -41,12 +41,12 @@
             color: #ffb300;
         }
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 2rem auto;
             background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 2rem;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(40,53,147,0.10);
+            padding: 2.5rem 1.5rem;
         }
         .intro {
             text-align: center;
@@ -100,10 +100,12 @@
 </head>
 <body>
     <header>
-        <img src="./Photo/pmf logo.png" alt="PMF Skill Institute Logo">
-        <span style="font-size:2rem;font-weight:bold;">PMF Skill Institute</span>
-        <div style="font-size:1rem;margin-top:0.3rem;">NSDA (National Skill Development Authority) Affiliated</div>
-        <div style="font-size:1rem;margin-top:0.3rem;">Sharif Villa (2nd & 3rd Floor), Khalifaghat, Kamrangirchar, Dhaka-1211</div>
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:aquamarine;padding:1.2rem 0 1.2rem 0;border-radius:18px;box-shadow:0 2px 12px #43a047;max-width:700px;margin:0 auto;">
+            <img src="./Photo/pmf logo.png" alt="PMF Skill Institute Logo" style="height:90px;width:auto;margin-bottom:0.7rem;box-shadow:0 2px 12px #d76d77;border-radius:16px;">
+            <span style="font-size:2.3rem;font-weight:bold;color:#43a047;letter-spacing:2px;">PMF Skill Institute</span>
+            <div style="font-size:1.08rem;margin-top:0.3rem;color:#e65100;font-weight:600;">NSDA (National Skill Development Authority) Affiliated</div>
+            <div style="font-size:1.08rem;margin-top:0.3rem;color:#283593;">Sharif Villa (2nd & 3rd Floor), Khalifaghat, Kamrangirchar, Dhaka-1211</div>
+        </div>
     </header>
     <nav>
         <a href="">Home</a>
@@ -112,23 +114,91 @@
         <a href="">Contact</a>
     </nav>
     <div class="container">
-        <section class="intro" id="home">
-            <h1>Welcome to PMF Skill Institute</h1>
-            <img src="./Photo/IMG_20250226_122817.jpg" alt="Lab Photo 6" style="width:60%;border-radius:8px;">
-            <p>Empowering your future with practical skills. We offer a wide range of <b>free</b> and <b>paid</b> courses, both online and offline, to help you build your career. Join us and learn from industry experts!</p>
-        </section>
-        <section id="introduction" style="margin-bottom:2.5rem;">
-            <h2 style="text-align:center;">Introduction</h2>
-            <p style="max-width:800px;margin:0 auto;text-align:center;">PMF Skill Institute is dedicated to providing high-quality, industry-relevant training to empower individuals for the modern workforce. Our NSDA-affiliated institute offers a blend of technical, creative, and vocational courses, ensuring every learner can find a path to success. With a focus on hands-on learning, research, and community development, we strive to build a skilled, confident, and future-ready generation.</p>
+        <section id="welcome-intro" style="margin-bottom:2.5rem;">
+            <div style="max-width:650px;margin:0 auto 2.5rem auto;background:linear-gradient(135deg,#fffbe7 0%,#e3eafc 100%);border:4px solid #ffaf7b;border-image:linear-gradient(90deg,#ffaf7b,#43a047,#3a1c71) 1;border-radius:32px;box-shadow:0 8px 32px #d76d77,0 2px 12px #43a047;text-align:center;padding:2.7rem 2rem 2.2rem 2rem;position:relative;">
+                <div style="position:absolute;top:-32px;left:50%;transform:translateX(-50%);background:#fffbe7;border-radius:50%;box-shadow:0 2px 12px #ffaf7b;width:90px;height:90px;display:flex;align-items:center;justify-content:center;">
+                    <img src="./Photo/pmf logo.png" alt="PMF Skill Institute Logo" style="height:70px;width:auto;">
+                </div>
+                <h1 style="color:#43a047;font-size:2.5rem;font-weight:900;margin-bottom:1.2rem;letter-spacing:2px;text-shadow:0 2px 12px #fffbe7;margin-top:1.5rem;">Welcome to <span style="color:#e65100;">PMF Skill Institute</span></h1>
+                <img src="./Photo/IMG_20250226_122817.jpg" alt="Lab Photo 6" style="width:70%;max-width:340px;border-radius:18px;box-shadow:0 2px 12px #ffaf7b;margin-bottom:1.2rem;">
+                <p style="color:#283593;font-size:1.18rem;margin-top:1.2rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.7;background:rgba(255,255,255,0.7);border-radius:12px;padding:0.7rem 1rem;box-shadow:0 1px 4px #e3eafc;">Empowering your future with <b style="color:#e65100;">practical skills</b>. We offer a wide range of <b style="color:#43a047;">free</b> and <b style="color:#e65100;">paid</b> courses, both online and offline, to help you build your career. <span style="background:#fffbe7;padding:0.2rem 0.7rem;border-radius:8px;color:#d76d77;font-weight:600;">Join us and learn from industry experts!</span></p>
+                <div style="margin:2.2rem 0 1.2rem 0;text-align:center;">
+                    <h2 style="color:#e65100;font-size:1.45rem;font-weight:700;margin-bottom:1.2rem;letter-spacing:1px;">Our Modern Lab</h2>
+                    <div style="display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap;">
+                        <img src="./Photo/IMG_20250226_114754.jpg" alt="Lab Photo 1" style="width:120px;height:90px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px #e3eafc;">
+                        <img src="./Photo/IMG_20250226_115827.jpg" alt="Lab Photo 2" style="width:120px;height:90px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px #e3eafc;">
+                        <img src="./Photo/IMG_20250226_120035.jpg" alt="Lab Photo 3" style="width:120px;height:90px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px #e3eafc;">
+                        <img src="./Photo/IMG_20250226_122723.jpg" alt="Lab Photo 4" style="width:120px;height:90px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px #e3eafc;">
+                    </div>
+                </div>
+            </div>
+            <div style="max-width:650px;margin:0 auto 2.5rem auto;background:linear-gradient(90deg,#e3eafc 0%,#ffaf7b 100%);border:2.5px solid #43a047;border-radius:24px;box-shadow:0 2px 12px #3a1c71;padding:2rem 1.2rem 1.2rem 1.2rem;text-align:center;">
+                <h2 style="text-align:center;color:#1a237e;font-size:2.1rem;letter-spacing:1px;">Introduction</h2>
+                <p style="max-width:500px;margin:0 auto;text-align:center;font-size:1.18rem;color:#283593;line-height:1.7;">PMF Skill Institute is dedicated to providing high-quality, industry-relevant training to empower individuals for the modern workforce. Our NSDA-affiliated institute offers a blend of technical, creative, and vocational courses, ensuring every learner can find a path to success. With a focus on hands-on learning, research, and community development, we strive to build a skilled, confident, and future-ready generation.</p>
+            </div>
+            <div style="max-width:700px;margin:0 auto 2.5rem auto;background:linear-gradient(135deg,#fffbe7 0%,#e3eafc 100%);border:3px solid #e65100;border-radius:28px;box-shadow:0 4px 18px #d76d77,0 2px 12px #43a047;padding:2.2rem 1.5rem 2rem 1.5rem;text-align:center;">
+                <h2 style="color:#e65100;font-size:2rem;font-weight:900;letter-spacing:2px;margin-bottom:1.2rem;text-shadow:0 2px 12px #fffbe7;">WHY YOU SHOULD CHOOSE US</h2>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;max-width:600px;margin:0 auto 1.5rem auto;">
+                    <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(67,160,71,0.08);border-radius:14px;padding:1rem;box-shadow:0 1px 4px #e3eafc;">
+                        <span style="font-size:2rem;color:#43a047;">&#128188;</span>
+                        <div style="text-align:left;">
+                            <b style="color:#43a047;">Industry-Aligned Courses</b><br>
+                            <span style="color:#283593;font-size:1.05rem;">Our programs are designed in collaboration with industry experts to ensure relevance and applicability.</span>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(40,53,147,0.08);border-radius:14px;padding:1rem;box-shadow:0 1px 4px #e3eafc;">
+                        <span style="font-size:2rem;color:#283593;">&#128104;&#8205;&#127979;</span>
+                        <div style="text-align:left;">
+                            <b style="color:#283593;">Experienced Trainers</b><br>
+                            <span style="color:#283593;font-size:1.05rem;">Our instructors are highly qualified and bring a wealth of experience to the classroom.</span>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(230,81,0,0.08);border-radius:14px;padding:1rem;box-shadow:0 1px 4px #e3eafc;">
+                        <span style="font-size:2rem;color:#e65100;">&#128187;</span>
+                        <div style="text-align:left;">
+                            <b style="color:#e65100;">State-of-the-Art Facilities</b><br>
+                            <span style="color:#283593;font-size:1.05rem;">We provide modern training facilities equipped with the latest technology and tools.</span>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(255,175,123,0.08);border-radius:14px;padding:1rem;box-shadow:0 1px 4px #e3eafc;">
+                        <span style="font-size:2rem;color:#ffaf7b;">&#128188;&#128100;</span>
+                        <div style="text-align:left;">
+                            <b style="color:#e65100;">Job Placement Assistance</b><br>
+                            <span style="color:#283593;font-size:1.05rem;">We offer robust support in connecting our graduates with potential employers.</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="background:rgba(40,53,147,0.07);border-radius:14px;padding:1.2rem 1rem;margin:0 auto;max-width:600px;box-shadow:0 1px 4px #e3eafc;">
+                    <span style="font-size:1.25rem;color:#43a047;font-weight:700;">Comprehensive Curriculum</span><br>
+                    <span style="color:#283593;font-size:1.08rem;">Our courses cover both theoretical knowledge and practical skills. Choosing PMF Skills Institute means investing in your future and unlocking your full potential for success in today's competitive job market.</span>
+                </div>
+            </div>
+            </div>
         </section>
         </section>
         <section id="principal-message" style="margin-bottom:2.5rem;">
             <h2 style="text-align:center;">Principal's Message</h2>
             <div style="max-width:700px;margin:0 auto;text-align:center;">
-                <img src="./Photo/pmf logo.png" alt="Principal" style="width:90px;height:90px;border-radius:50%;margin-bottom:1rem;box-shadow:0 2px 8px #ccc;">
-               
-                <p style="font-size:1.1rem;">Welcome to PMF Skill Institute! Our mission is to empower students with practical skills and knowledge for a brighter future. We are committed to providing quality education, modern facilities, and a supportive environment for all learners. Join us and take the next step towards your success.<br><b>- Principal, PMF Skill Institute</b></p>
-                  <img src="./Photo/WhatsApp Image 2025-07-26 at 12.21.05_8d186cec.jpg" alt="Principal" style="width:390px;height:390px;border-radius:none;margin-bottom:1rem;box-shadow:0 2px 8px #ccc;">
+                <div id="principal-message-box" style="background:linear-gradient(90deg,#e3eafc,#ffaf7b);color:#283593;border-radius:18px;box-shadow:0 2px 12px #d76d77;padding:2rem 1.2rem 1.2rem 1.2rem;position:relative;">
+                    <img src="./Photo/pmf logo.png" alt="Principal" style="width:90px;height:90px;border-radius:50%;margin-bottom:1rem;box-shadow:0 2px 8px #ccc;">
+                    <div id="principal-msg-short" style="font-size:1.15rem;line-height:1.7;">
+                        Assalamu Alaikum and warm greetings to the people of Bangladesh.<br>
+                        Bangladesh is our pride and our future. This country is home to countless talented and hardworking young men and women who often miss out on life-changing opportunities simply due to a lack of proper skills and guidance.<br>
+                        With a vision to change this reality, PMF Skills Institute was established.
+                    </div>
+                    <div id="principal-msg-full" style="display:none;font-size:1.15rem;line-height:1.7;">
+                        Assalamu Alaikum and warm greetings to the people of Bangladesh.<br>
+                        Bangladesh is our pride and our future. This country is home to countless talented and hardworking young men and women who often miss out on life-changing opportunities simply due to a lack of proper skills and guidance.<br>
+                        With a vision to change this reality, PMF Skills Institute was established. We firmly believe that skills are the key to a brighter future. That is why we are committed to providing modern training labs, experienced instructors, and market-relevant courses to help our youth become skilled, confident, and capable citizens.<br>
+                        Our institute is open to all, with a special focus on empowering women through technical education and career development. Alongside training, we are actively engaged in research initiatives that contribute to national development by providing knowledge-based solutions and policies.<br>
+                        We envision a future where every household in Bangladesh nurtures at least one skilled individual who actively contributes to the progress of our society and nation.<br>
+                        Let us work together to build a skilled, self-reliant, and prosperous Bangladesh.<br>
+                        Thank you for your continued support, prayers, and goodwill.<br>
+                        <b>- MD FAHAD HOSSEN, Principal, PMF Skill Institute</b>
+                    </div>
+                    <button id="see-more-principal" style="margin-top:1.2rem;background:#283593;color:#fff;padding:0.5rem 1.5rem;border-radius:12px;font-weight:600;border:none;cursor:pointer;box-shadow:0 1px 4px #283593;">See More</button>
+                </div>
+                <img src="./Photo/fahad..jpg" alt="Principal" style="width:390px;height:390px;border-radius:12px;margin-top:1.5rem;box-shadow:0 2px 8px #ccc;">
             </div>
         </section>
         <section id="courses">
@@ -138,43 +208,43 @@
             <h2 style="text-align:center;">Our Popular Courses</h2>
             <div class="courses">
                 <div class="course" onclick="showCourseDetails(0)">
-                    <h3>Computer Operation (Level-3) <span class="badge">Free</span></h3>
+                    <h3>Computer Operation (Level-3) <span class="badge"></span></h3>
                     <p>Basic computer operation, MS Office, and digital literacy for all.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(1)">
-                    <h3>Graphic Design (Level-3) <span class="badge">Free</span></h3>
+                    <h3>Graphic Design (Level-3) <span class="badge"></span></h3>
                     <p>Photoshop, Illustrator, and design principles for creative careers.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(2)">
-                    <h3>Graphic Design for Freelancing (Level-3) <span class="badge">Free</span></h3>
+                    <h3>Graphic Design for Freelancing (Level-3) <span class="badge"></span></h3>
                     <p>Freelance-focused design skills, portfolio building, and online earning.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(3)">
-                    <h3>Woven Sewing Machine Operation (Level-2) <span class="badge">Free</span></h3>
+                    <h3>Woven Sewing Machine Operation (Level-2) <span class="badge"></span></h3>
                     <p>Industrial sewing machine operation and garment production basics.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(4)">
-                    <h3>Tailoring & Dress Making (Level-2) <span class="badge">Free</span></h3>
+                    <h3>Tailoring & Dress Making (Level-2) <span class="badge"></span></h3>
                     <p>Dress making, tailoring, and fashion design fundamentals.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(5)">
-                    <h3>Solar Electrical System Installation (Level-1) <span class="badge">Free</span></h3>
+                    <h3>Solar Electrical System Installation (Level-1) <span class="badge"></span></h3>
                     <p>Solar panel installation, maintenance, and green energy basics.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(6)">
-                    <h3>Mobile Phone Servicing (Level-2) <span class="badge">Free</span></h3>
+                    <h3>Mobile Phone Servicing (Level-2) <span class="badge"></span></h3>
                     <p>Mobile phone repair, troubleshooting, and servicing skills.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(7)">
-                    <h3>Construction Site Supervision (Level-4) <span class="badge">Free</span></h3>
+                    <h3>Construction Site Supervision (Level-4) <span class="badge"></span></h3>
                     <p>Site management, safety, and supervision for construction projects.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(8)">
-                    <h3>Electrical Installation & Maintenance for Construction (Level-2) <span class="badge">Free</span></h3>
+                    <h3>Electrical Installation & Maintenance for Construction (Level-2) <span class="badge"></span></h3>
                     <p>Electrical wiring, installation, and maintenance for construction sites.</p>
                 </div>
                 <div class="course" onclick="showCourseDetails(9)">
-                    <h3>Knit Sewing Machine Operation (Level-2) <span class="badge">Free</span></h3>
+                    <h3>Knit Sewing Machine Operation (Level-2) <span class="badge"></span></h3>
                     <p>Knitwear sewing machine operation and production skills.</p>
                 </div>
             </div>
@@ -200,36 +270,63 @@
         </section>
         <section id="about" style="margin-top:2.5rem;">
         <section id="research" style="margin-top:2.5rem;">
-            <h2>PMF Skills Institute - Research Sectors</h2>
-            <ul style="max-width:800px;margin:0 auto 1.5rem auto;line-height:1.7;">
-                <li><b>Public Health and Epidemiology</b><br>Research on disease patterns, healthcare systems, and community health improvement strategies.</li>
-                <li><b>Environmental Sustainability & Climate Change</b><br>Focused on environmental protection, sustainable practices, and climate resilience in vulnerable communities.</li>
-                <li><b>TVET and Skills Development</b><br>Studies on technical and vocational education, labor market needs, and youth employability.</li>
-                <li><b>Women's Empowerment and Gender Studies</b><br>Research on gender equality, women's rights, and inclusive development policies.</li>
-                <li><b>Child Rights and Protection</b><br>Investigations into child welfare, education access, protection policies, and institutional support systems.</li>
-                <li><b>Migration and Labor Market</b><br>Analysis of internal and external migration, labor dynamics, and socioeconomic impacts.</li>
-                <li><b>Agriculture and Food Security</b><br>Research on sustainable agriculture, rural livelihoods, and resilience in food systems.</li>
-                <li><b>Digital Inclusion and ICT</b><br>Studies on access to digital tools, ICT training, and reducing the digital divide.</li>
-                <li><b>Urban Development and WASH</b><br>Research on urban planning, informal settlements, and access to safe water, sanitation, and hygiene.</li>
-                <li><b>Project Proposal for Construction (Level-6)</b><br>Advanced research and proposal writing for construction projects and infrastructure development.</li>
-            </ul>
-            <p style="text-align:center;">We encourage students to participate in research and project-based learning. Our institute provides resources and guidance for academic and practical research, innovation, and skill-based projects. Contact us to know more about ongoing research opportunities and how you can get involved!</p>
+            <div style="background:linear-gradient(90deg,#43a047 0%,#e3eafc 100%);border:3px solid #d76d77;border-radius:18px;box-shadow:0 2px 12px #3a1c71;padding:2rem 1.2rem 1.2rem 1.2rem;max-width:850px;margin:0 auto 2rem auto;">
+                <h2 style="text-align:center;color:#d76d77;font-size:2rem;letter-spacing:1px;">PMF Skills Institute - Research Sectors</h2>
+                <ul style="margin:0 auto 1.5rem auto;line-height:1.7;font-size:1.08rem;color:#283593;">
+                    <li><b>Public Health and Epidemiology</b><br>Research on disease patterns, healthcare systems, and community health improvement strategies.</li>
+                    <li><b>Environmental Sustainability & Climate Change</b><br>Focused on environmental protection, sustainable practices, and climate resilience in vulnerable communities.</li>
+                    <li><b>TVET and Skills Development</b><br>Studies on technical and vocational education, labor market needs, and youth employability.</li>
+                    <li><b>Women's Empowerment and Gender Studies</b><br>Research on gender equality, women's rights, and inclusive development policies.</li>
+                    <li><b>Child Rights and Protection</b><br>Investigations into child welfare, education access, protection policies, and institutional support systems.</li>
+                    <li><b>Migration and Labor Market</b><br>Analysis of internal and external migration, labor dynamics, and socioeconomic impacts.</li>
+                    <li><b>Agriculture and Food Security</b><br>Research on sustainable agriculture, rural livelihoods, and resilience in food systems.</li>
+                    <li><b>Digital Inclusion and ICT</b><br>Studies on access to digital tools, ICT training, and reducing the digital divide.</li>
+                    <li><b>Urban Development and WASH</b><br>Research on urban planning, informal settlements, and access to safe water, sanitation, and hygiene.</li>
+                    <li><b>Project Proposal for Construction (Level-6)</b><br>Advanced research and proposal writing for construction projects and infrastructure development.</li>
+                </ul>
+                <p style="text-align:center;color:#1a237e;font-weight:500;">We encourage students to participate in research and project-based learning. Our institute provides resources and guidance for academic and practical research, innovation, and skill-based projects. Contact us to know more about ongoing research opportunities and how you can get involved!</p>
+            </div>
         </section>
             <h2>About Us</h2>
             <p>PMF Skill Institute is a proud NSDA-affiliated training center dedicated to providing quality skill development for all. Our mission is to make skill-based education accessible and affordable, helping you achieve your career goals.</p>
+            <div style="background:linear-gradient(90deg,#e3eafc 0%,#ffaf7b 100%);border:2px solid #43a047;border-radius:14px;box-shadow:0 2px 8px #d76d77;padding:1.5rem 1rem;margin:2rem 0;max-width:600px;text-align:center;">
+                <h3 style="color:#1a237e;">NSDA Registration</h3>
+                <img src="./Photo/nsda.jpg" alt="NSDA Registration" style="width:70%;max-width:320px;border-radius:8px;box-shadow:0 2px 8px #43a047;margin-bottom:1rem;">
+                <p style="color:#283593;font-size:1.08rem;">NSDA registration ensures our institute meets national standards for skill development. <br><span style="color:#e65100;font-weight:600;"></span></p>
+            </div>
         </section>
         <section id="contact" style="margin-top:2.5rem;">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:info@pmfskill.com">info@pmfskill.com</a></p>
-            <p>Phone: 017xx-xxxxxx</p>
-            <p>Address: PMF Skill Institute, Dhaka, Bangladesh</p>
+            <div style="background:linear-gradient(90deg,#e3eafc 0%,#ffaf7b 100%);border:3px solid #3a1c71;border-radius:18px;box-shadow:0 2px 12px #d76d77;padding:2.5rem 1.5rem 2rem 1.5rem;max-width:700px;margin:0 auto 2rem auto;text-align:center;">
+                <h2 style="color:#1a237e;font-size:2rem;letter-spacing:1px;margin-bottom:1.2rem;">Contact</h2>
+                <div style="font-size:1.15rem;color:#283593;margin-bottom:1.2rem;"><b>Email:</b> <a href="mailto:infopmfskills@yahoo.com" style="color:#d76d77;text-decoration:underline;">pmfskillsa806@gmail.com</a></div>
+                <div style="font-size:1.15rem;color:#283593;margin-bottom:1.2rem;"><b>Phone:</b> <span style="color:#43a047;">01302824919</span></div>
+                <div style="font-size:1.15rem;color:#283593;margin-bottom:1.2rem;"><b>Address:</b> <span style="color:#e65100;">Sharif Villa (2nd & 3rd Floor), Khalifaghat, Kamrangirchar, Dhaka-1211</span></div>
+                <div style="margin-top:2rem;text-align:center;">
+                    <span style="font-size:1.18rem;color:#1a237e;font-weight:700;letter-spacing:1px;">Follow us:</span>
+                    <div style="margin-top:1rem;display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;">
+                        <a id="fb-link" href="https://www.facebook.com/share/1LtezZyPT8/" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;background:#3a1c71;color:#fff;padding:0.7rem 1.5rem;border-radius:12px;text-decoration:none;font-weight:600;box-shadow:0 2px 8px #3a1c71;font-size:1.08rem;transition:background 0.2s;">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width:28px;height:28px;filter:invert(1);"> Facebook Page
+                        </a>
+                        <a id="yt-link" href="https://youtu.be/Vc4iq7Isbek?si=_C75zXNz4iTt51M6" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;background:#e65100;color:#fff;padding:0.7rem 1.5rem;border-radius:12px;text-decoration:none;font-weight:600;box-shadow:0 2px 8px #e65100;font-size:1.08rem;transition:background 0.2s;">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style="width:28px;height:28px;filter:invert(1);"> YouTube Channel
+                        </a>
+                    </div>
+                    <div style="margin-top:1.2rem;color:#d76d77;font-size:1.05rem;">Stay connected with us on social media for updates, events, and more!</div>
+                </div>
+            </div>
         </section>
     </div>
     <footer>
-        &copy; 2025 PMF Skill Institute. All rights reserved. Powered by Shikhbo Next MD RIMON MOLLA.
+        &copy; 2025 PMF Skill Institute. All rights reserved. Developed By:Globadesh Tech.
     </footer>
 </body>
 <script>
+// Principal message see more functionality
+document.getElementById('see-more-principal').onclick = function() {
+    document.getElementById('principal-msg-short').style.display = 'none';
+    document.getElementById('principal-msg-full').style.display = 'block';
+    this.style.display = 'none';
+};
 // Main Course button functionality (above popular courses)
 document.getElementById('show-course-btn-main').onclick = function() {
     const courseGrid = document.createElement('div');
